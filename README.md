@@ -17,7 +17,9 @@ Proyecto de riego automático para Electrónica Digital I
 ## Objetivo
 
 >   Armar un riego automatico registrando valores de humedad y temperatura
+> 
 >   Crear una página de Web residente en el ESP32, y mediante la misma, se podrá ver los valores de humedad y temperatura de la planta
+> 
 >   Ademas de poder modificar la humedad critica en la pagina Web, que indicara cuando se abrira el gotero   
 
 ## Hardware
