@@ -61,10 +61,15 @@ Proyecto de riego automático para Electrónica Digital I
    
 
  Creación de objetos:  
+   
    (45) _display_ de tipo Adafruit_SSD1306 con las varaibles (ANCHO_PANTALLA, ALTO_PANTALLA, &Wire, -1);
+   
    (46) _oneWireObjeto_ de tipo OneWire con la variable (TEMPERATUREPIN)
+   
    (47) _sensorDS18B20_ de tipo DallasTemperature con la instancia (&oneWireObjeto)
+   
    (48) _servo_ de tipo Servo
+   
    (49) _server_ de tipo _WiFiServer_ en port 80  
 
  Definiciones: 
