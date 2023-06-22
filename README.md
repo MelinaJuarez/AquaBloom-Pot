@@ -1,8 +1,6 @@
 # Proyecto AquaBloom Pot
-Proyecto de riego automático para Electrónica Digital I
 
 ### Austral - Electronica Digital - 2023 - EAM
-
 
 ## Secciones
 
@@ -13,22 +11,20 @@ Proyecto de riego automático para Electrónica Digital I
 - [Biblioteca](#biblioteca)
 - [Constantes](#constantes)
 
-
 ## Objetivo
 
->   Armar un riego automatico registrando valores de humedad y temperatura
-> 
->   Crear una página de Web residente en el ESP32, y mediante la misma, se podrá ver los valores de humedad y temperatura de la planta
-> 
+>   Crear una página de Web residente en el ESP32  
+>   Mediante la misma, se podrá ver los valores de humedad y temperatura de la planta
 >   Ademas de poder modificar la humedad critica en la pagina Web, que indicara cuando se abrira el gotero   
 
 ## Hardware
-	1 YL69 (Sensor de humedad)
- 	1 DS18B20 (Sensor de temperatura)
-	1 Resistor de 4700 ohm
-	1 SG-5010 (Servo de 180 grados)
-	1 SSD1306 (Pantalla OLED)
-	Jumper wires
+
+  1 YL69 (Sensor de humedad)
+  1 DS18B20 (Sensor de temperatura)
+  1 Resistor de 4700 ohm
+  1 SG-5010 (Servo de 180 grados)
+  1 SSD1306 (Pantalla OLED)
+  Jumper wires
 
   Sensor de Humedad:
     Conectar VCC a 5V
@@ -57,7 +53,9 @@ Proyecto de riego automático para Electrónica Digital I
 
  El programa es una modificación respecto a los proyectos _05-servo_main_ y del proyecto _ Update WebPageUpdate.ino_ del autor _KrisKasprzak_.    
 
- Creación de objetos:
+   
+
+ Creación de objetos:  
    (45) _display_ de tipo Adafruit_SSD1306 con las varaibles (ANCHO_PANTALLA, ALTO_PANTALLA, &Wire, -1);
    (46) _oneWireObjeto_ de tipo OneWire con la variable (TEMPERATUREPIN)
    (47) _sensorDS18B20_ de tipo DallasTemperature con la instancia (&oneWireObjeto)
@@ -108,24 +106,18 @@ Proyecto de riego automático para Electrónica Digital I
 
 
 ## platformio.ini
-Se definen seis constantes:
-
+   Se definen seis constantes:
    _TEMPERATUREPIN_: define en qué GPIO está conectado el sensor de temperatura
-   
    _HUMIDITYPIN_: define en qué GPIO está conectado el sensor de humedad
-   
    _SERVOPIN_: define en qué GPIO está conectado al Servo
-   
    _ANCHO_PANTALLA_: define el ancho de la pantalla OLED
-   
    _ALTO_PANTALLA_: define el alto de la pantalla OLED
-   
    _SERIAL_BAUD_: define el baud rate de la conexión serie haciendola igual a _monitor_speed_    
 
 
 ## Biblioteca
 
-Se necesitan estas librerias externas:
+    Se necesitan estas librerias externas:
     Pantalla OLED:
         _SPI.h_
         _Wire.h_
@@ -150,5 +142,3 @@ Se necesitan estas librerias externas:
 ## Constantes
 
    Las declaradas en _platformio.ini_
-
-
