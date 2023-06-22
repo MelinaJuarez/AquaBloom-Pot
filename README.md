@@ -23,13 +23,12 @@ Proyecto de riego automático para Electrónica Digital I
 >   Ademas de poder modificar la humedad critica en la pagina Web, que indicara cuando se abrira el gotero   
 
 ## Hardware
-
-  1 YL69 (Sensor de humedad)
-  1 DS18B20 (Sensor de temperatura)
-  1 Resistor de 4700 ohm
-  1 SG-5010 (Servo de 180 grados)
-  1 SSD1306 (Pantalla OLED)
-  Jumper wires
+	1 YL69 (Sensor de humedad)
+ 	1 DS18B20 (Sensor de temperatura)
+	1 Resistor de 4700 ohm
+	1 SG-5010 (Servo de 180 grados)
+	1 SSD1306 (Pantalla OLED)
+	Jumper wires
 
   Sensor de Humedad:
     Conectar VCC a 5V
