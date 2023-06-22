@@ -109,18 +109,24 @@ Proyecto de riego automático para Electrónica Digital I
 
 
 ## platformio.ini
-   Se definen seis constantes:
+Se definen seis constantes:
+
    _TEMPERATUREPIN_: define en qué GPIO está conectado el sensor de temperatura
+   
    _HUMIDITYPIN_: define en qué GPIO está conectado el sensor de humedad
+   
    _SERVOPIN_: define en qué GPIO está conectado al Servo
+   
    _ANCHO_PANTALLA_: define el ancho de la pantalla OLED
+   
    _ALTO_PANTALLA_: define el alto de la pantalla OLED
+   
    _SERIAL_BAUD_: define el baud rate de la conexión serie haciendola igual a _monitor_speed_    
 
 
 ## Biblioteca
 
-    Se necesitan estas librerias externas:
+Se necesitan estas librerias externas:
     Pantalla OLED:
         _SPI.h_
         _Wire.h_
