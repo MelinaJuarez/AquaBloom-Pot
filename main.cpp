@@ -55,7 +55,6 @@ void SendWebsite() {
 }
 
 // code to send the main web page
-// I avoid string data types at all cost hence all the char mainipulation code
 void SendXML() {
 
   strcpy(XML, "<?xml version = '1.0'?>\n<Data>\n");
