@@ -21,7 +21,7 @@ Sensors sensors;
 ServoMotor servoMotor;
 
 
-boolean state = servoMotor.check_state(); 
+bool state = servoMotor.check_state(); 
 float temperature = sensors.readTemperature();
 float humidity = sensors.readHumidity();
 
