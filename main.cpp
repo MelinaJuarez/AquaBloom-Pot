@@ -21,10 +21,9 @@ Sensors sensors;
 ServoMotor servoMotor;
 
 
-bool state;
+boolean state = servoMotor.check_state(); 
 float temperature = sensors.readTemperature();
 float humidity = sensors.readHumidity();
-boolean servoStatus = servoMotor.check_state();  
 
 // wifi part:
 // definitions of your desired intranet created by the ESP32
@@ -160,10 +159,10 @@ void loop() {
 
   // Analizar los valores y controlar el servo motor
   bool needsWatering = sensors.analyze();
-  if (needsWatering && !servoMotor.check_state()) { // Se abre si se necesita agua y está cerrado
+  if (needsWatering && !state) { // Se abre si se necesita agua y está cerrado
     servoMotor.open();
   } else {
-    if (servoMotor.check_state()){ // se cierra si ya estaba abierto de antes    
+    if (state){ // se cierra si ya estaba abierto de antes    
       servoMotor.close();
       }
   }
